@@ -1,0 +1,22 @@
+input:focus  ~ .instruction-text {
+    opacity:1;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.optional-text {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 14px;
+    color: #999;
+}
+
+.instruction-text {
+    font-size: 14px;
+    color: #999;
+    opacity:0;
+    transition: all .2s ease-out;
+}

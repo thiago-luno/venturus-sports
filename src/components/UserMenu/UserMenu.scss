@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.user-menu {
+    position: relative;
+    font-size: 16px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &:focus {
+        outline:none;
+        box-shadow: 0;
+        user-select: none;
+    }
+}
+
+.dropdown-menu {
+    display: block;
+    right: 0;
+    top: 130%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0.17);
+}
+
+.dropdown-item {
+    line-height: 1.7rem;
+
+    &:hover, &:focus {
+        color: $primaryColor;
+        text-decoration: none;
+        background-color: #f8f9fa;
+    }
+}
+
+.avatar {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #505050;
+    border-radius: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

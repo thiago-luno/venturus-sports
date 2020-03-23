@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+.table {
+    font-size: 14px;
+
+    thead {
+        border-bottom: 1px solid #333333;
+    }
+
+    tr {
+        vertical-align: middle;
+
+        &:hover {
+            .icon-delete {
+                opacity: 1;
+            }
+        }
+    }
+
+    td {
+        vertical-align: middle;
+        padding: 1rem;
+    }
+
+    .link-table {
+        color: $primaryColor;
+        text-decoration: none;
+    }
+}
+
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color:#f8f8f8;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.table-hover tbody tr:hover {
+    color: #212529;
+    background-color: #e3e3e3;
+}
+
+.icon-delete {
+    color: $primaryColor;
+    cursor: pointer;
+    opacity: 0;
+    outline: none;
+    border: none;
+    box-shadow: none;
+
+    &:hover{
+        color: $primaryColor;
+    }
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow:none;
+}
+
+
+.valign-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

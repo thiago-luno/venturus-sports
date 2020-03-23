@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.breadcrumb-content {
+    background-color: #f9f9f9;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb {
+    display: flex;
+    background-color: #f9f9f9;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &-item {
+        color: $primaryColor;
+        cursor: pointer;
+        a {
+            color: #505050;
+            cursor: pointer;
+
+            &:hover {
+                color: $primaryColor;
+            }
+
+            &::after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f105";
+                display: inline-block;
+                padding-right: 3px;
+                vertical-align: middle;
+                font-weight: 900;
+                margin-left: 10px;
+                color: #999999;
+            }
+
+            &::after:last-child {
+                font-family: "";
+                content: "";
+      
+            }
+        }
+
+        &::after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f105";
+            display: inline-block;
+            padding-right: 3px;
+            vertical-align: middle;
+            font-weight: 900;
+            margin-left: 10px;
+            color: #999999;
+        }
+
+       &:last-child::after {
+            font-family: "";
+            content: "";
+        }
+    }
+
+    .root {
+        color: $primaryColor;
+        cursor: pointer;
+    }
+}
+
+.root {
+    color: #505050;
+    
+    &:hover{
+        text-decoration: none;
+    }
+}
